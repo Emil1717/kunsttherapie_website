@@ -15,5 +15,5 @@ jobs:
         username: ftp_konto_1
         password: ${{ secrets.FTP_PASSWORD }}
         local-dir: ./kunsttherapie_website/
-        remote-dir: /anjahennemann.de/httpdocs/
-        passive: true
+        server-dir: /anjahennemann.de/httpdocs/
+        
