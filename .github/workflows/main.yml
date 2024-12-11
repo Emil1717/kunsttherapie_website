@@ -14,6 +14,6 @@ jobs:
         server: hosting211978.ae969.netcup.net
         username: ftp_konto_1
         password: ${{ secrets.FTP_PASSWORD }}
-        local-dir: /kunsttherapie/
+        local-dir: /kunsttherapie_website/
         server-dir: /anjahennemann.de/httpdocs/
         
