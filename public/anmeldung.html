@@ -1,0 +1,144 @@
+
+<body>
+    <!-- Anmeldung -->
+    <form action="../src/php/save_sign_in.php" method="POST">
+        <div class="max-w-[85rem] px-4 py-10 sm:px-6 lg:px-8 lg:py-14 mx-auto ">
+            <div class="max-w-xl mx-auto border p-4 bg-gray-100 shadow-md rounded-btn">
+                <div class="text-center">
+                    <h1 class="text-3xl font-bold text-gray-800 sm:text-4xl">
+                        Anmeldung
+                    </h1>
+                    <p class="mt-1 text-gray-600">
+
+                    </p>
+                </div>
+
+                <div class="mt-6 text-primary">
+                    <!-- Form -->
+                    
+                        <!-- Verstecker Inout für Kurs -->
+                        <input type="hidden" id="kurs" name="kurs" value="">
+
+                        <div class="rounded-btn bg-secondary bg-opacity-50 p-4 text-center ">
+                            <div class="grid gap-4 lg:gap-6 ">
+                                <!-- Grid -->
+                                <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 lg:gap-6 ">
+                                    <div>
+                                        <label for="anmeldung-vorname"
+                                            class="block mb-2 text-sm text-primary font-medium">Vorname</label>
+                                        <input type="text" name="vorname" id="vorname"
+                                            class="py-3 px-4 text-gray-700 block w-full border-gray-200 rounded-lg text-sm focus:border-blue-500 focus:ring-blue-500 disabled:opacity-50 disabled:pointer-events-none">
+                                    </div>
+
+                                    <div>
+                                        <label for="anmeldung-nachname"
+                                            class="block mb-2 text-sm text-primary font-medium">Nachname</label>
+                                        <input type="text" name="nachname" id="nachname"
+                                            class="py-3 px-4 text-gray-700 block w-full border-gray-200 rounded-lg text-sm focus:border-blue-500 focus:ring-blue-500 disabled:opacity-50 disabled:pointer-events-none">
+                                    </div>
+                                </div>
+                                <!-- End Grid -->
+
+
+
+                                <!-- Grid -->
+                                <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 lg:gap-6">
+
+                                    <div>
+                                        <label for="anmeldung-email"
+                                            class="block mb-2 text-sm text-primary font-medium">Email-Adresse</label>
+                                        <input type="email" name="email" id="email"
+                                            autocomplete="email"
+                                            class="py-3 px-4 text-gray-700 block w-full border-gray-200 rounded-lg text-sm focus:border-blue-500 focus:ring-blue-500 disabled:opacity-50 disabled:pointer-events-none">
+                                    </div>
+
+                                    <div>
+                                        <label for="anmeldung-tel"
+                                            class="block mb-2 text-sm text-primary font-medium">Telefonnummer</label>
+                                        <input type="tel" name="tel" id="tel"
+                                            class="py-3 px-4 text-gray-700 block w-full border-gray-200 rounded-lg text-sm focus:border-blue-500 focus:ring-blue-500 disabled:opacity-50 disabled:pointer-events-none">
+                                    </div>
+
+
+                                </div>
+                            </div>
+
+                            <!-- End Grid -->
+                            <div class="py-8 xl:px-8 text-center ">
+                                <label class="font-semibold text-2xl ">Adresse</label>
+                                <div class="grid gap-4 lg:gap-6">
+                                    <!-- Grid -->
+                                    <div class="grid grid-cols-1 gap-4 lg:gap-6">
+                                        <div>
+                                            <label for="anmeldung-adresse"
+                                                class="block mb-2 text-sm text-primary font-medium">Straße &
+                                                Hausnummer</label>
+                                            <input type="text" name="street" id="street"
+                                                class="py-3 px-4 text-gray-700 block w-full border-gray-200 rounded-lg text-sm focus:border-blue-500 focus:ring-blue-500 disabled:opacity-50 disabled:pointer-events-none">
+                                        </div>
+                                    </div>
+                                    <!-- End Grid -->
+                                    <!-- Grid -->
+                                    <div class="grid grid-cols-2 sm:grid-cols-2 gap-4 lg:gap-6">
+                                        <div>
+                                            <label for="anmeldung-stadt"
+                                                class="block mb-2 text-sm text-primary font-medium">Stadt</label>
+                                            <input type="text" name="city" id="city"
+                                                class="py-3 px-4 text-gray-700 block w-full border-gray-200 rounded-lg text-sm focus:border-blue-500 focus:ring-blue-500 disabled:opacity-50 disabled:pointer-events-none">
+                                        </div>
+
+                                        <div>
+                                            <label for="anmeldung-zip-code"
+                                                class="block mb-2 text-sm text-primary font-medium">Postleitzahl</label>
+                                            <input type="text" name="postalcode" id="postalcode"
+                                                class="py-3 px-4 text-gray-700 block w-full border-gray-200 rounded-lg text-sm focus:border-blue-500 focus:ring-blue-500 disabled:opacity-50 disabled:pointer-events-none">
+                                        </div>
+
+
+                                    </div>
+                                    <div class="grid grid-cols-1  gap-4 lg:gap-6">
+                                        <div>
+                                            <label for="anmeldung-land"
+                                                class="block mb-2 text-sm text-primary font-medium">Land</label>
+                                            <input type="text" name="country" id="country"
+                                                class="py-3 px-4 text-gray-700 block w-full border-gray-200 rounded-lg text-sm focus:border-blue-500 focus:ring-blue-500 disabled:opacity-50 disabled:pointer-events-none">
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- End Grid -->
+                            </div>
+                        </div>
+                        <!-- End Grid -->
+
+                        <!-- Checkbox -->
+                        <div class="mt-3 flex">
+                            <div class="flex">
+                                <input id="remember-me" name="remember-me" type="checkbox"
+                                    class="shrink-0 mt-1.5 border-gray-200 rounded text-blue-600 focus:ring-blue-500">
+                            </div>
+                            <div class="ms-3">
+                                <label for="remember-me" class="text-sm text-gray-600">Ich aktzeptiere die <a
+                                        class="text-blue-600 decoration-2 hover:underline focus:outline-none focus:underline font-medium"
+                                        href="#">AGB's</a></label>
+                            </div>
+                        </div>
+                        <!-- End Checkbox -->
+
+                        <div class="mt-6 grid">
+                            <button type="submit"
+                                class="w-full py-3 px-4 inline-flex justify-center items-center gap-x-2 text-sm font-medium rounded-lg border border-transparent bg-blue-600 text-white hover:bg-blue-700 focus:outline-none focus:bg-blue-700 disabled:opacity-50 disabled:pointer-events-none">Anmelden</button>
+                        </div>
+
+                        <div class="mt-3 text-center">
+                            <p class="text-sm text-gray-500">
+                                Bitte achten Sie auf eine Bestätigungs-Email
+                            </p>
+                        </div>
+                    
+                    <!-- End Form -->
+                </div>
+            </div>
+        </div>
+    </form>
+    <!-- End Hire Us -->
+</body>
