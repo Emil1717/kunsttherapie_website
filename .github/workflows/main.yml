@@ -1,23 +1,16 @@
-name: FTP Deployment
-
-on:
-  push:
-    branches:
-      - main
-
+on: push
+name: 🚀 Deploy website on push
 jobs:
-  deploy:
+  web-deploy:
+    name: 🎉 Deploy
     runs-on: ubuntu-latest
-
     steps:
-      - name: Checkout code
-        uses: actions/checkout@v2
-
-      - name: Deploy over FTP
-        uses: SamKirkland/FTP-Deploy-Action@4.3.5
-        with:
-          server: hosting211978.ae969.netcup.net
-          username: ${{ secrets.FTP_USERNAME }}
-          password: ${{ secrets.FTP_PASSWORD }}
-          server-dir: /anjahennemann.de/httpdocs
-          local-dir: ./kunsttherapie_website
+    - name: 🚚 Get latest code
+      uses: actions/checkout@v4
+    
+    - name: 📂 Sync files
+      uses: SamKirkland/FTP-Deploy-Action@v4.3.5
+      with:
+        server: ftp.samkirkland.com
+        username: ftp_konto_1
+        password: ${{ secrets.FTP_PASSWORD }}
