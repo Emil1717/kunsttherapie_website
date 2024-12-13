@@ -52,3 +52,33 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 
+document.addEventListener('DOMContentLoaded', function () {
+    const loader = document.getElementById('loader');
+    const gallery = document.getElementById('gallery');
+    const images = document.querySelectorAll('#gallery img');
+    
+    let imagesLoaded = 0;
+    const totalImages = images.length;
+
+    images.forEach(img => {
+        img.addEventListener('load', () => {
+            imagesLoaded++;
+            
+            // Überprüfen, ob alle Bilder geladen sind
+            if (imagesLoaded === totalImages) {
+                loader.style.display = 'none';  // Ladebalken ausblenden
+                gallery.classList.remove('hidden'); // Galerie anzeigen
+            }
+        });
+
+        img.addEventListener('error', () => {
+            imagesLoaded++;
+            
+            // Auch bei Fehlern sollte der Ladebalken verschwinden
+            if (imagesLoaded === totalImages) {
+                loader.style.display = 'none';  // Ladebalken ausblenden
+                gallery.classList.remove('hidden'); // Galerie anzeigen
+            }
+        });
+    });
+});
