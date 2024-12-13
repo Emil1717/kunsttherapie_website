@@ -55,7 +55,7 @@ document.addEventListener("DOMContentLoaded", () => {
 document.addEventListener('DOMContentLoaded', function () {
     const loader = document.getElementById('loader');
     const gallery = document.getElementById('gallery');
-    const images = document.querySelectorAll('#gallery img');
+    const images = document.querySelectorAll('.gallery-image');
     
     let imagesLoaded = 0;
     const totalImages = images.length;
