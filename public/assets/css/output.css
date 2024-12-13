@@ -1879,10 +1879,6 @@ html {
   top: 0px;
 }
 
-.top-64 {
-  top: 16rem;
-}
-
 .z-\[1000\] {
   z-index: 1000;
 }
@@ -2046,12 +2042,12 @@ html {
   height: fit-content;
 }
 
-.h-screen {
-  height: 100vh;
-}
-
 .h-full {
   height: 100%;
+}
+
+.h-screen {
+  height: 100vh;
 }
 
 .w-2\/3 {
