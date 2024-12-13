@@ -59,7 +59,6 @@ document.addEventListener('DOMContentLoaded', function () {
     
     let imagesLoaded = 0;
     const totalImages = images.length;
-
     images.forEach(img => {
         img.addEventListener('load', () => {
             imagesLoaded++;
