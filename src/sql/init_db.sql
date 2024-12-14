@@ -1,6 +1,6 @@
-CREATE DATABASE participants_kurs_1;
+CREATE DATABASE participants;
 
-USE participants_kurs_1;
+USE participants;
 
 CREATE TABLE participants (
     id INT AUTO_INCREMENT PRIMARY KEY,
