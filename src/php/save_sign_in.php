@@ -64,7 +64,7 @@ $stmt->execute([$vorname, $nachname, $email, $tel, $street, $city, $postalcode, 
 
 if ($stmt) {
     // Weiterleitung zur Zielseite nach erfolgreicher Anmeldung
-    header("Location: response_pages/sign_up_confirmed.html");  // Hier gibst du die URL zur Ziel-HTML-Seite an
+    header("Location: ../../public/response_pages/sign_up_confirmed.html");  // Hier gibst du die URL zur Ziel-HTML-Seite an
     exit();  // Wichtig: Den Script-Flow hier stoppen
 } else {
     echo "<script type='text/javascript'>
