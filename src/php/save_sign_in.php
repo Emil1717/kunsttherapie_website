@@ -1,9 +1,9 @@
 <?php
 // Datenbankverbindung
-$host = 'localhost';
-$user = 'anjahennemann_user';
+$host = '10.35.233.106';
+$user = 'k257454_anjahennemann_user';
 $password = 'nohwi3-Qisbon-wytpur';
-$dbname = 'anjahennemann_db';
+$dbname = 'k257454_anjahennemann_db';
 
 try {
     // Erstelle eine neue PDO-Verbindung
